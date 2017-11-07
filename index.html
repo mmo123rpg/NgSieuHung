@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <title>Project</title>
+
+    <!-- Bootstrap -->
+    <link href="css/owl.carousel.css" rel="stylesheet">
+    <link href="css/owl.theme.default.css" rel="stylesheet">
+    <link href="css/owl.transitions.css" rel="stylesheet">
+    <link href="css/styles.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Catamaran:700" rel="stylesheet">
+
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+  </head>
+<body>
+    <!-- <div class="text">
+        WELCOME
+    </div> -->
+    <div class="owl-carousel">
+      <div class="owl-slide slide1">
+        </div>
+      <div class="owl-slide slide2">
+        </div>
+      <div class="owl-slide slide3">            
+        </div>
+    </div>
+
+<!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+<!-- Include all compiled plugins (below), or include individual files as needed -->
+<script src="js/owl.carousel.min.js"></script>
+<script>
+    $(".owl-carousel").owlCarousel({
+        navigation : true,
+        pagination: false, 
+        navigation: false,
+        dots: false,
+        loop:true, 
+        autoplay:true,
+        items:1,
+        transitionStyle : "fade"
+    });
+
+    jQuery.fn.center = function () {
+        this.css("top", Math.max(0, (($(window).height() - $(this).outerHeight()) / 2 ) + 
+                                                    $(window).scrollTop()) + "px");
+        this.css("left", Math.max(0, (($(window).width() - $(this).outerWidth()) / 2) + 
+                                                    $(window).scrollLeft()) + "px");
+        return this;
+    }
+    $(".text").center();
+    jQuery(window).resize(function () { 
+        $(".text").center();
+    });
+</script>
+  </body>
+</html>
