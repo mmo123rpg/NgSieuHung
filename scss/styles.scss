@@ -6,11 +6,19 @@
 		height: 100%;
 	}
 	
-	.owl-slide {
-		background-image: url('https://images.unsplash.com/photo-1437915015400-137312b61975?fit=crop&fm=jpg&h=800&q=80&w=1200');
+	.owl-slide {		
 		background-repeat: no-repeat;
 		background-size: cover;
 		background-position: center;
+	}
+	.slide1{
+		background-image: url('../img/img1.jpg');
+	}
+	.slide2{
+		background-image: url('../img/img2.jpg');
+	}
+	.slide3{
+		background-image: url('../img/img3.jpg');
 	}
 	
 	div.owl--text {
@@ -68,5 +76,105 @@ html {
 
 body {
 	margin: 0;
-	font-family: futura, sans-serif;
+}
+
+.text{
+  
+  font-size:180px;
+  line-height:180px;
+  z-index:99;
+  color:black;
+  background:white;
+  opacity:.6;
+  padding:20px 30px;
+  @media (max-width: 1366px){
+    font-size:120px;
+  	line-height:120px;
+  }
+  @media (max-width: 1024px){
+    font-size:80px;
+  	line-height:80px;
+  }
+  @media (max-width: 767px){
+    font-size:40px;
+  	line-height:40px;
+  }
+  @media (max-width: 412px){
+    font-size:30px;
+  	line-height:30px;
+  }
+  @media (max-width: 360px){
+    font-size:20px;
+  	line-height:20px;
+  }
+
+}
+.content-background{
+	position:absolute;
+	background: #ccbda0;
+	z-index:99;
+	width:100%;
+	padding:20px;
+	color:white;
+	opacity:.7;
+	@media (min-width: 768px){
+	    width:768px;
+	    font-size:16px;
+	    padding:60px;
+	}
+	h2{
+		margin-bottom:24px;
+		margin-top:0;
+	}
+}
+button{
+  position:absolute;
+  top:0px;
+  right:0px;
+  z-index:99;
+  color: #282828!important;
+  background-color: #ba9653;
+  border-color: #ba9653;
+  border-radius:0!important;
+}
+.logo{
+	background-image: url('../img/shangri-la-logo.png');
+	top: 0px;
+    left: 0px;
+    z-index: 99;
+    width: 120px;
+    position:absolute;
+    height: 60px;
+    background-size: 110px 56px;
+    background-repeat: no-repeat;
+    background-position: center center;
+}
+.btn-login{
+	height:60px;
+	background-color:#ac8642;
+	color:#282828;
+}
+.app-title{
+	font-size:13px;
+	line-height:60px;
+	color:white;
+	@media (min-width: 768px){
+	    font-size:20px;
+	}
+	@media (max-width: 560px){
+	    display:none;
+	}
+}
+.contact{
+	cursor:pointer;
+	background: #282828;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    width: 120px;
+    height: 60px;
+    z-index: 99;
+    color: white;
+    text-align: center;
+    padding: 10px;
 }

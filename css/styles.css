@@ -7,24 +7,23 @@
   height: 100%;
 }
 
-.owl-carousel .owl-slide {  
+.owl-carousel .owl-slide {
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
 }
 
-.slide1{
+.owl-carousel .slide1 {
   background-image: url("../img/img1.jpg");
 }
 
-.slide2{
+.owl-carousel .slide2 {
   background-image: url("../img/img2.jpg");
 }
 
-.slide3{
+.owl-carousel .slide3 {
   background-image: url("../img/img3.jpg");
 }
-
 
 .owl-carousel div.owl--text {
   position: absolute;
@@ -77,18 +76,143 @@ html {
 }
 
 body {
-  margin: 0;font-family: 'Catamaran', sans-serif;
+  margin: 0;
+  font-family: 'Catamaran', sans-serif;
 }
 
-.text{
-  position:absolute;
-  font-size:180px;
-  line-height:180px;
-  z-index:99;
-  font-weight:bold;
-  color:black;
-  background:white;
-  opacity:.6;
-  padding:20px 30px;
-  -webkit-mask-image: url("../img/img2.jpg");
+.text {
+    position: absolute;
+    font-size: 180px;
+    line-height: 180px;
+    z-index: 99;
+    font-weight: bold;
+    color: black;
+    background: white;
+    opacity: .6;
+    padding: 20px 30px;
+    -webkit-mask-image: url(../img/img2.jpg);
+}
+
+@media (max-width: 1366px) {
+  .text {
+    font-size: 120px;
+    line-height: 120px;
+  }
+}
+
+@media (max-width: 1024px) {
+  .text {
+    font-size: 80px;
+    line-height: 80px;
+  }
+}
+
+@media (max-width: 767px) {
+  .text {
+    font-size: 40px;
+    line-height: 40px;
+  }
+}
+
+@media (max-width: 412px) {
+  .text {
+    font-size: 30px;
+    line-height: 30px;
+  }
+}
+
+@media (max-width: 360px) {
+  .text {
+    font-size: 20px;
+    line-height: 20px;
+  }
+}
+
+.content-background {
+  position: absolute;
+  background: #ccbda0;
+  z-index: 99;
+  width: 100%;
+  padding: 20px;
+  color: white;
+  opacity: .7;
+}
+
+@media (min-width: 768px) {
+  .content-background {
+    width: 768px;
+    font-size: 16px;
+    padding: 60px;
+  }
+}
+
+.content-background h2 {
+  margin-bottom: 24px;
+  margin-top: 0;
+}
+
+button {
+  position: absolute;
+  top: 0px;
+  right: 0px;
+  z-index: 99;
+  color: #282828 !important;
+  background-color: #ba9653;
+  border-color: #ba9653;
+  border-radius: 0 !important;
+}
+
+.logo {
+  background-image: url("../img/shangri-la-logo.png");
+  top: 0px;
+  left: 0px;
+  z-index: 99;
+  width: 120px;
+  position: absolute;
+  height: 60px;
+  background-size: 110px 56px;
+  background-repeat: no-repeat;
+  background-position: center center;
+}
+
+.btn-login {
+  height: 60px;
+  background-color: #ac8642;
+  color: #282828;
+}
+
+.app-title {
+  font-size: 13px;
+  line-height: 60px;
+  color: white;
+}
+
+@media (min-width: 768px) {
+  .app-title {
+    font-size: 20px;
+  }
+}
+
+@media (max-width: 560px) {
+  .app-title {
+    display: none;
+  }
+}
+
+.contact {
+  cursor: pointer;
+  background: #282828;
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  width: 120px;
+  height: 60px;
+  z-index: 99;
+  color: white;
+  text-align: center;
+  padding: 10px;
+}
+
+.text-center{
+  text-align: center;
 }

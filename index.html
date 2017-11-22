@@ -22,6 +22,11 @@
     <![endif]-->
   </head>
 <body>
+    <div style="background:#282828;width:100%;position:absolute;top:0;z-index:99;height:60px;">
+        <div class="logo"></div>
+        <div class="text-center app-title">HOTEL MARKETING ENGAGEMENT PLATFORM</div>
+        <button class="btn btn-login" type="submit">LOGIN</button>
+    </div>
     <div class="text">
         WELCOME
     </div>
@@ -47,7 +52,8 @@
         loop:true, 
         autoplay:true,
         items:1,
-        transitionStyle : "fade"
+        animateOut: 'slideOutDown',
+        animateIn: 'flipInX',
     });
 
     jQuery.fn.center = function () {
